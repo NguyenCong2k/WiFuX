@@ -27,6 +27,35 @@ def iface_up(iface, down=False):
     return res.returncode == 0
 
 
+def _handle_result(companion, args):
+    """On a successful crack, store the result and write requested reports."""
+    res = getattr(companion, 'last_result', None)
+    if not res:
+        return
+    try:
+        from wifux.storage import StorageManager
+        StorageManager().add_result(res)
+    except Exception as e:
+        sys.stderr.write("[!] Could not save result: %s\n" % e)
+    fmts = []
+    if args.html_report:
+        fmts.append('html')
+    if args.csv_output:
+        fmts.append('csv')
+    if args.json_output:
+        fmts.append('json')
+    if args.report_format:
+        fmts.append(args.report_format)
+    if fmts:
+        from wifux.report import ReportGenerator
+        rg = ReportGenerator()
+        for f in sorted(set(fmts)):
+            try:
+                print("[i] Report (%s): %s" % (f, rg.write(res, f)))
+            except Exception as e:
+                sys.stderr.write("[!] Report %s failed: %s\n" % (f, e))
+
+
 def cmd_pins(bssid):
     """Offline: print candidate PINs for a BSSID (no hardware needed)."""
     from wifux.database import WiFuXDatabase
@@ -60,7 +89,25 @@ def main(argv=None):
     p.add_argument('--show-pixie-cmd', action='store_true', help='print the pixiewps command')
     p.add_argument('--pins', action='store_true',
                    help='offline: only list candidate PINs for --bssid and exit')
+    p.add_argument('--html-report', action='store_true', help='write an HTML report on success')
+    p.add_argument('--csv-output', action='store_true', help='write a CSV report on success')
+    p.add_argument('--json-output', action='store_true', help='write a JSON report on success')
+    p.add_argument('--report-format', choices=('html', 'csv', 'json'),
+                   help='also write a report in this format on success')
+    p.add_argument('--list-sessions', action='store_true',
+                   help='list saved bruteforce sessions and exit')
     args = p.parse_args(argv)
+
+    if args.list_sessions:
+        from wifux.storage import StorageManager
+        sessions = StorageManager().list_sessions()
+        if sessions:
+            print("Saved sessions:")
+            for b in sessions:
+                print("   " + b)
+        else:
+            print("No saved sessions.")
+        return 0
 
     # Offline mode — no hardware/root required.
     if args.pins:
@@ -107,6 +154,7 @@ def main(argv=None):
             companion.single_connection(
                 args.bssid, args.pin, args.pixie_dust, args.pbc,
                 args.show_pixie_cmd, args.pixie_force)
+        _handle_result(companion, args)
     except KeyboardInterrupt:
         sys.stderr.write("\n[!] Aborted\n")
     finally:

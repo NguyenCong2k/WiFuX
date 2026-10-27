@@ -41,6 +41,8 @@ standard library (runs on any CPython 3.6+ — no bytecode/version lock):
 | `wifux/wps.py` | WPS PIN generation — 24/28/32-bit, D-Link, ASUS, Airocon, TrendNet, EasyBox/Arcadyan, Arris, static |
 | `wifux/companion.py` | WPS attack engine (wpa_supplicant + pixiewps) |
 | `wifux/scanner.py` | Wi-Fi / WPS scanner |
+| `wifux/report.py` | report generation — HTML / CSV / JSON |
+| `wifux/storage.py` | results history + bruteforce sessions (`~/.WiFuX`) |
 | `wifux/__main__.py` | command-line entrypoint |
 
 ### Run
@@ -58,15 +60,37 @@ sudo python -m wifux -i wlan0 -b AA:BB:CC:DD:EE:FF -B   # online bruteforce
 Scanning uses `iw` in **managed mode**, so no monitor mode is required (works on
 internal Wi-Fi).
 
+### Reports & sessions
+
+```bash
+sudo python -m wifux -i wlan0 -b AA:BB:CC:DD:EE:FF -K --html-report   # + HTML
+sudo python -m wifux -i wlan0 -b AA:BB:CC:DD:EE:FF -B --json-output   # + JSON
+python -m wifux --list-sessions                                      # saved sessions
+```
+
+Reports land in `./reports/`; cracked results and resume sessions are kept under
+`~/.WiFuX/`. `--html-report`, `--csv-output`, `--json-output` and
+`--report-format {html,csv,json}` can be combined.
+
+### Global `wifux` command (Termux)
+
+```bash
+git clone https://github.com/NguyenCong2k/WiFuX && cd WiFuX
+bash setup.sh          # installs deps + registers the `wifux` command
+wifux --pins -b AA:BB:CC:DD:EE:FF
+su -c 'wifux -i wlan0 -K'
+```
+
 ### Tests
 
 ```bash
-python -m tests.test_wps && python -m tests.test_database && python -m tests.test_companion
+python -m tests.test_wps && python -m tests.test_database \
+  && python -m tests.test_companion && python -m tests.test_report_storage
 ```
 
-> **Status:** database + PIN generation are complete and tested. The attack
-> engine and scanner are ported and compile/import cleanly but have **not been
-> live-tested** — verify on your own hardware before relying on them.
+> **Status:** database, PIN generation, reports and storage are complete and
+> tested offline. The attack engine and scanner are ported and compile/import
+> cleanly but have **not been live-tested** — verify on your own hardware.
 
 This rebuild is **GPLv3**, derived from OneShot — see [ATTRIBUTION.md](ATTRIBUTION.md).
 

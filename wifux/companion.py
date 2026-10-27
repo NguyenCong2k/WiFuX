@@ -153,6 +153,7 @@ class Companion:
 
         self.bssid = bssid
         self.lastPwr = 0
+        self.last_result = None   # set to a result dict on a successful crack
 
     def __init_wpa_supplicant(self):
         print('[*] Running wpa_supplicant…')
@@ -444,6 +445,13 @@ class Companion:
 
         if self.connection_status.status == 'GOT_PSK':
             self.__credentialPrint(pin, self.connection_status.wpa_psk, self.connection_status.essid)
+            self.last_result = {
+                'bssid': bssid,
+                'essid': self.connection_status.essid,
+                'wps_pin': pin,
+                'wpa_psk': self.connection_status.wpa_psk,
+                'date': datetime.now().strftime('%d.%m.%Y %H:%M'),
+            }
             if self.save_result:
                 self.__saveResult(bssid, self.connection_status.essid, pin, self.connection_status.wpa_psk)
             if not pbc_mode:
