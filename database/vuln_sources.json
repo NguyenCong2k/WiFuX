@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-27",
+  "sources": [
+    {
+      "name": "WiFuX",
+      "url": "https://github.com/msrofficial/WiFuX",
+      "file": "vulnwsc.txt"
+    },
+    {
+      "name": "OneShot",
+      "url": "https://github.com/kimocoder/OneShot",
+      "file": "vulnwsc.txt"
+    },
+    {
+      "name": "OneShot-Extended",
+      "url": "https://github.com/chkndrp/OneShot-Extended",
+      "file": "vulnwsc.txt"
+    },
+    {
+      "name": "OneShot (fulvius31 fork)",
+      "url": "https://github.com/fulvius31/OneShot",
+      "file": "vulnwsc.txt"
+    }
+  ],
+  "router_models": {
+    "source": "main.py RouterModels",
+    "vendors": 54,
+    "vuln_confirmed": 174
+  }
+}

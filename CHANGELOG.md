@@ -4,6 +4,34 @@ All notable changes to WiFuX are documented in this file.
 
 ---
 
+## Database refresh — 2026-10-27
+
+### External vulnerable-device list
+
+- Merged `vulnwsc.txt` from:
+  - WiFuX upstream
+  - OneShot (`kimocoder/OneShot`)
+  - OneShot-Extended (`chkndrp/OneShot-Extended`)
+  - OneShot fulvius31 fork
+  - `RouterModels.VULN_CONFIRMED` from WiFuX's packed engine
+- Deduplicated case-insensitively and sorted alphabetically.
+- Result: **716 unique router/device entries** (up from 231).
+
+### Database exports
+
+- Added `database/router_models.json` — exported 54-vendor `RouterModels` database with default PINs, credentials, Pixie Dust ratings, known vulnerabilities, and model lists.
+- Added `database/pins.csv` — PIN/OUI pairs from the maintained OneShot fork.
+- Added `database/vuln_sources.json` — source metadata and attribution.
+- Added `scripts/update_database.py` — reproducible online/offline database refresh tool.
+- Added `database/README.md` and README database section.
+
+### Notes
+
+- `main.py` remains packed; the embedded `RouterModels` data was not rewritten in place. `database/router_models.json` is the canonical export for a future source-level refactor.
+- Upstream databases have their own licenses; keep attribution when redistributing.
+
+---
+
 ## v2.0 — 2026
 
 ### Core Engine

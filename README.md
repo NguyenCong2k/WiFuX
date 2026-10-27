@@ -69,6 +69,25 @@ bash installer.sh
 
 ---
 
+## Database
+
+WiFuX uses two layers of router data:
+
+- `vulnwsc.txt` — external list of WPS-vulnerable router models, read by `--vuln-list` / `--auto-vuln-list`.
+- `RouterModels` inside `main.py` — embedded vendor metadata: default PINs, default credentials, Pixie Dust rating, and known vulnerabilities.
+
+This upgrade branch refreshes the external list and exports the embedded database to `database/router_models.json` for future source-level refactors.
+
+Refresh the external list:
+
+```bash
+python3 scripts/update_database.py
+```
+
+See [database/README.md](database/README.md) for sources and attribution.
+
+---
+
 ## Commands
 
 | Command | Description |

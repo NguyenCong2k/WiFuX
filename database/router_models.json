@@ -1,0 +1,1888 @@
+{
+  "schema_version": 1,
+  "source": "WiFuX v2.0 main.py RouterModels + OneShot upstream vuln lists",
+  "vendors_count": 54,
+  "models": {
+    "Airlink": {
+      "models": [
+        "Airlink101 AR430W",
+        "AR450W"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Alcatel": {
+      "models": [
+        "HH40",
+        "HH41",
+        "Link Zone"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": true,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Amped Wireless": {
+      "models": [
+        "ATHENA-EX",
+        "ALLY",
+        "COPTER"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Arcadyan": {
+      "models": [
+        "VGV7519",
+        "VGV7510KW22",
+        "VRV9519",
+        "ARV7519RW22"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "arcadyan"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Arcadyan/SKY WPS PIN algorithm weakness"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Arris": {
+      "models": [
+        "Arris SB6141",
+        "Arris SB8200",
+        "Arris SB6190",
+        "Arris TG862",
+        "Arris TG1682G",
+        "Arris NVG468MQ"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "motorola"
+        ],
+        [
+          "admin",
+          "password"
+        ],
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [
+        "ISP-controlled modem vulnerabilities",
+        "Arris default backdoor"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Asus": {
+      "models": [
+        "RT-N16",
+        "RT-AC66U",
+        "RT-AC82U",
+        "RT-AC88U",
+        "RT-AX55",
+        "RT-AX88U",
+        "ROG Rapture GT-AC5300",
+        "DSL-AC750L"
+      ],
+      "default_pins": [
+        "12345670",
+        "88888888",
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "12345"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": true,
+      "known_vulns": [
+        "ASUS WPS brute-force susceptible"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "ASUS ZenWiFi": {
+      "models": [
+        "AX6600",
+        "AX11000",
+        "ET12",
+        "ZenWifi AX",
+        "ZenWifi 7"
+      ],
+      "default_pins": [
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Atheros": {
+      "models": [
+        "AR9331 Router",
+        "Dragino AR9331",
+        "OpenWrt AR9331",
+        "QSDK Router QCA9377",
+        "Enterprise AP QCA9377"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "root"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "CRITICAL",
+      "weak_wps": true,
+      "known_vulns": [
+        "Atheros/Qualcomm WPS PRNG flaw"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Belkin": {
+      "models": [
+        "N600",
+        "F5D7234-4",
+        "F5D8233-4",
+        "F5D8633-4",
+        "F7D2301",
+        "F9J1102",
+        "F7D4401"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "belkin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Belkin WPS PIN brute-force"
+      ],
+      "brute_force": true,
+      "vuln_versions": [
+        "1.0"
+      ]
+    },
+    "Broadcom": {
+      "models": [
+        "BCM4706",
+        "BCM4708",
+        "BCM4709",
+        "BCM47186",
+        "WiFi Module BCM4330",
+        "Consumer Router BCM4330",
+        "WiFi Module BCM4360",
+        "Enterprise BCM4360"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "root"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Broadcom WPS PRNG flaw"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "BrosTrend": {
+      "models": [
+        "AC1900"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "BT Home Hub": {
+      "models": [
+        "BT Home Hub 2.0",
+        "BT Home Hub 3.0",
+        "BT Home Hub 4.0",
+        "BT Home Hub 5.0",
+        "BT Smart Hub"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "bhpasswrd"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "BT Hub WPS weak implementation"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Buffalo": {
+      "models": [
+        "WZR-HP-G300NH",
+        "AirStation",
+        "WHR-HP-G300N",
+        "WZR-600DHP"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Buffalo WPS weak RNG"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Cisco": {
+      "models": [
+        "Linksys E2500",
+        "E4200",
+        "Catalyst 9000"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "cisco"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Comtrend": {
+      "models": [
+        "AR-5381u",
+        "AR-5387un",
+        "CT-5365",
+        "CT-5367",
+        "VR-3025u",
+        "WAP-5813n",
+        "VI-3234u",
+        "Comtrend 5067",
+        "Comtrend 5071",
+        "Comtrend AR-5387"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "root"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "ISP modem WPS vulnerability"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Coship": {
+      "models": [
+        "Coship LTE Router",
+        "VDSL Modem"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "ISP modem vulnerabilities"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "D-Link": {
+      "models": [
+        "DAP-1190",
+        "DIR-300",
+        "DIR-600",
+        "DIR-635",
+        "DIR-645",
+        "DIR-825",
+        "DIR-880L",
+        "DAP-1520"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670",
+        "11111111",
+        "88888888"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          ""
+        ],
+        [
+          "admin",
+          "password"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "D-Link WPS PIN disclosure",
+        "Weak RNG"
+      ],
+      "brute_force": true,
+      "vuln_versions": [
+        "1.0",
+        "1.1",
+        "1.2"
+      ]
+    },
+    "Edimax": {
+      "models": [
+        "Edimax",
+        "BR-6428nS",
+        "BR-6675nD",
+        "BR-6258n"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Edimax WPS weak PIN"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Eero": {
+      "models": [
+        "Eero Pro",
+        "Eero Pro 6",
+        "Eero Pro 6E",
+        "Eero Beacon",
+        "Eero AX",
+        "Eero Max 7"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [
+        "Mesh network privacy leak"
+      ],
+      "brute_force": false,
+      "vuln_versions": []
+    },
+    "FritzBox": {
+      "models": [
+        "FritzBox 3370",
+        "FritzBox 3390",
+        "FritzBox 3490"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          ""
+        ],
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "FritzBox firmware vulnerabilities"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "GL.iNet": {
+      "models": [
+        "GL-AR150",
+        "GL-MT300N",
+        "GL-X750",
+        "GL-AX1800"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "goodlife"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": true,
+      "known_vulns": [
+        "Custom firmware vulnerabilities"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Google Nest": {
+      "models": [
+        "Google Nest WiFi",
+        "Nest WiFi Pro 6E",
+        "Nest WiFi Pro 7",
+        "Google OnHub",
+        "Google WiFi"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [
+        "Account-based security dependency"
+      ],
+      "brute_force": false,
+      "vuln_versions": []
+    },
+    "Huawei": {
+      "models": [
+        "HG532e",
+        "HG532s",
+        "HG553",
+        "HG658",
+        "HG8245",
+        "HG8245A",
+        "HG8245H",
+        "HS8145V5",
+        "B525",
+        "B593",
+        "E5186",
+        "HG533",
+        "HG255"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345678",
+        "11111111"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "telecomadmin",
+          "admintelecom"
+        ],
+        [
+          "admin",
+          "huawei123"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "JCG": {
+      "models": [
+        "JCG Y2",
+        "JCG Q20",
+        "JCG A6"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "jcg"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "CRITICAL",
+      "weak_wps": true,
+      "known_vulns": [
+        "Poor WPS implementation"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Keenetic": {
+      "models": [
+        "Keenetic Start",
+        "Keenetic Lite",
+        "Keenetic 4G",
+        "Keenetic Giga",
+        "Keenetic Extra",
+        "Keenetic Viva"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Keenetic WPS vulnerability"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Linksys": {
+      "models": [
+        "WRT54GL",
+        "WRT120N",
+        "WRT160N",
+        "WRT300N",
+        "E1000",
+        "E1200",
+        "E2500",
+        "E2700",
+        "E3200",
+        "E3500",
+        "E4200",
+        "EA6350",
+        "EA7300",
+        "MR8300"
+      ],
+      "default_pins": [
+        "12345670",
+        "00000000",
+        "11223344"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "linksys"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Linksys WPS weak RNG"
+      ],
+      "brute_force": true,
+      "vuln_versions": [
+        "1.0",
+        "1.1",
+        "1.2"
+      ]
+    },
+    "MediaTek": {
+      "models": [
+        "MT7628",
+        "MT7688",
+        "MT7620",
+        "MT7621",
+        "WITI Board",
+        "VDSL Modem",
+        "ISP Router MT7620",
+        "IoT Router MT7628",
+        "WiFi Repeater MT7628"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670",
+        "11111111",
+        "99999999"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          ""
+        ],
+        [
+          "root",
+          "root"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "CRITICAL",
+      "weak_wps": true,
+      "known_vulns": [
+        "MediaTek WPS chipset vulnerability",
+        "Weak PRNG"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Mercusys": {
+      "models": [
+        "Mercusys MW300",
+        "Mercusys MW325R",
+        "Mercusys MR30G",
+        "Mercusys MR50G",
+        "Mercusys AC12G",
+        "Mercusys AC1200"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Mercusys WPS weak implementation",
+        "TP-Link OEM firmware flaws"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "MikroTik": {
+      "models": [
+        "RB433",
+        "RB750",
+        "RB951",
+        "RB2011",
+        "RB3011",
+        "hAP",
+        "hAP ac"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          ""
+        ],
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "root"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": true,
+      "known_vulns": [
+        "RouterOS default credentials",
+        "Weak encryption"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Netgear": {
+      "models": [
+        "WNR614N",
+        "WNR1200",
+        "WNR2200",
+        "WNDR3700",
+        "WNDR4300",
+        "WNDR4500",
+        "R7000",
+        "R8000",
+        "Nighthawk X10",
+        "R9000"
+      ],
+      "default_pins": [
+        "12345670",
+        "11223344",
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "password"
+        ],
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Netgear WPS PIN weak RNG",
+        "Authentication bypass"
+      ],
+      "brute_force": true,
+      "vuln_versions": [
+        "1.0",
+        "1.1",
+        "1.2"
+      ]
+    },
+    "Netis": {
+      "models": [
+        "WF2780",
+        "WF2883",
+        "MW5230"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Poor security design"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Nexx": {
+      "models": [
+        "Nexx WT3020",
+        "WT3020F",
+        "WT3020AD"
+      ],
+      "default_pins": [
+        "12345670",
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "OpenWrt vulnerabilities"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "OpenWrt": {
+      "models": [
+        "OpenWrt TP-Link",
+        "OpenWrt D-Link",
+        "OpenWrt Linksys",
+        "Gargoyle OpenWrt",
+        "Tomato-based",
+        "Asus RT-N66U Tomato"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "root"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "OpenWrt base vulnerabilities"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Orbi": {
+      "models": [
+        "Orbi RBK50",
+        "Orbi RBK850",
+        "Orbi RBK960",
+        "Orbi WiFi 6",
+        "Orbi WiFi 6E",
+        "Orbi 960"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "password"
+        ],
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [
+        "Netgear Orbi default credentials"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Planex": {
+      "models": [
+        "DB-WRT300N",
+        "MZK-750DHP"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Planex firmware flaws"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Ralink": {
+      "models": [
+        "RT3052",
+        "RT3352",
+        "RT5350",
+        "MT7620",
+        "MT7621",
+        "RT3050"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "root"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "CRITICAL",
+      "weak_wps": true,
+      "known_vulns": [
+        "Ralink RT2860 PRNG flaw",
+        "Ralink WPS implementation bug"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Realtek": {
+      "models": [
+        "RTL8188",
+        "RTL8192",
+        "RTL8196C",
+        "RTL8196D",
+        "RTL8197D",
+        "RTL8723"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "CRITICAL",
+      "weak_wps": true,
+      "known_vulns": [
+        "Realtek WPS PRNG vulnerability",
+        "RTL8196 firmware flaw"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Realtek RTL8188EUS": {
+      "models": [
+        "USB WiFi RTL8188",
+        "Pocket WiFi RTL8188",
+        "Travel Router RTL8188"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "RealTek firmware vulnerability"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Sitecom": {
+      "models": [
+        "WLR-6100",
+        "WLR-7100"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Sitecom WPS weak implementation"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "SKY": {
+      "models": [
+        "SR101",
+        "SR102",
+        "SR103",
+        "SR203",
+        "ER115",
+        "SKY Hub"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "sky"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "SKY router WPS PIN predictable"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Sky Broadband": {
+      "models": [
+        "Sky Hub SR101",
+        "Sky Hub SR102",
+        "Sky Hub SR103",
+        "Sky Hub SR203",
+        "Sky Hub ER115",
+        "Sky Hub ER115w"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "sky"
+        ],
+        [
+          "admin",
+          "sky123"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Sky Hub WPS PIN predictable",
+        "ISP default credentials"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Synology": {
+      "models": [
+        "Synology RT1900ac",
+        "RT2600ac"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "synology"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [],
+      "brute_force": false,
+      "vuln_versions": []
+    },
+    "Tenda": {
+      "models": [
+        "N301",
+        "W316R",
+        "W368R",
+        "N600",
+        "F9",
+        "AC9",
+        "AC10",
+        "AC10U",
+        "AC15",
+        "AC18",
+        "N318",
+        "N600"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670",
+        "11111111"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "tendawifi"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Tenda WPS weak implementation"
+      ],
+      "brute_force": true,
+      "vuln_versions": [
+        "1.0",
+        "1.1"
+      ]
+    },
+    "Totolink": {
+      "models": [
+        "N300RH",
+        "N600R",
+        "AC1200R"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Totolink WPS weak implementation"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "TP-Link": {
+      "models": [
+        "TL-WR742N",
+        "TL-WR941N",
+        "TL-WR1043N",
+        "TL-WR1043ND",
+        "TL-WR1045ND",
+        "TL-WR2543ND",
+        "TL-WR740N",
+        "TL-WR741N",
+        "TL-WR741ND",
+        "TL-WR743ND",
+        "TL-WR940N",
+        "TL-WR941ND",
+        "TL-WA701ND",
+        "TL-WA730RE",
+        "TL-WA801ND",
+        "TL-WA830RE",
+        "TL-WA850RE",
+        "TL-WA901ND",
+        "TL-WDR3500",
+        "TL-WDR3600",
+        "TL-WDR4300",
+        "TL-WDR4900",
+        "Archer C7",
+        "Archer C8",
+        "Archer C9",
+        "Archer C60",
+        "Archer A9",
+        "Archer MR400",
+        "Archer VR2100",
+        "TL-MR100",
+        "TL-WR902AC",
+        "TD-W8960N",
+        "TD-W8961ND"
+      ],
+      "default_pins": [
+        "12345670",
+        "45678901",
+        "11223344",
+        "99887766",
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          ""
+        ],
+        [
+          "",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Predictable WPS PIN",
+        "Weak PRNG"
+      ],
+      "brute_force": true,
+      "vuln_versions": [
+        "1.0",
+        "2.0",
+        "2.1",
+        "3.0"
+      ]
+    },
+    "TP-Link Deco": {
+      "models": [
+        "Deco M5",
+        "Deco M9 Plus",
+        "Deco X60",
+        "Deco X90"
+      ],
+      "default_pins": [
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [
+        "Mesh configuration bypass"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "TRENDnet": {
+      "models": [
+        "TEW-731BR"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "trendnet"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "TRENDnet WPS PIN brute-force"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Ubiquiti": {
+      "models": [
+        "EdgeRouter",
+        "UniFi AP",
+        "EdgePoint",
+        "PowerBeam",
+        "EdgeRouter X",
+        "ER-X"
+      ],
+      "default_pins": [
+        "00000000"
+      ],
+      "default_creds": [
+        [
+          "ubnt",
+          "ubnt"
+        ],
+        [
+          "admin",
+          "ubnt"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [
+        "Privilege escalation"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Virgin Media": {
+      "models": [
+        "Virgin Media Hub 3",
+        "Virgin Media Hub 4",
+        "Virgin Media Hub 5",
+        "Super Hub 2",
+        "Super Hub 3"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "virgin"
+        ],
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "changeme"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [
+        "ISP default credentials exposure"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Vodafone": {
+      "models": [
+        "Vodafone Station",
+        "Vodafone EasyBox",
+        "Vodafone Power Station",
+        "Vodafone HHG2500",
+        "Vodafone Station Revolution"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "vodafone"
+        ],
+        [
+          "vodafone",
+          "vodafone"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Vodafone Station WPS weak PRNG",
+        "ISP default credentials"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Wavlink": {
+      "models": [
+        "WL-WN531G3",
+        "WL-WN576K2",
+        "WL-WN531A2"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "HIGH",
+      "weak_wps": true,
+      "known_vulns": [
+        "Poor WPS security"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Xiaomi": {
+      "models": [
+        "Mi Router 3G",
+        "Mi Router 4A",
+        "Mi Router 4C",
+        "Redmi Router AC2100",
+        "Mi WiFi Router Pro R3P",
+        "Mi Router 3",
+        "Redmi AX6000",
+        "MiBoot Router",
+        "Xiaomi Mi WiFi 2",
+        "Xiaomi Mi WiFi 3"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670",
+        "11111111"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "root",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "CRITICAL",
+      "weak_wps": true,
+      "known_vulns": [
+        "OpenWrt base vulnerabilities",
+        "Weak WPS PRNG"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "ZTE": {
+      "models": [
+        "ZXV10 H108N",
+        "ZXV10 H108L",
+        "ZTE F609",
+        "VN020-F3",
+        "EC220-G5",
+        "MF831",
+        "MF833V",
+        "MU2500"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670",
+        "12345678"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "admin"
+        ],
+        [
+          "admin",
+          "zte"
+        ],
+        [
+          "root",
+          "zte"
+        ]
+      ],
+      "pixie_dust": false,
+      "pixie_dust_rating": "LOW",
+      "weak_wps": false,
+      "known_vulns": [],
+      "brute_force": true,
+      "vuln_versions": []
+    },
+    "Zyxel": {
+      "models": [
+        "NBG-318S",
+        "NBG-334W",
+        "NBG5412",
+        "NBG6827",
+        "NBG7515",
+        "P-330W",
+        "P-334WT",
+        "P-660HW",
+        "Keenetic Start KN-1110",
+        "Keenetic Lite KN-1310",
+        "Keenetic 4G KN-1210",
+        "Keenetic Giga III KN-1010",
+        "Keenetic Extra II",
+        "Keenetic Viva"
+      ],
+      "default_pins": [
+        "00000000",
+        "12345670"
+      ],
+      "default_creds": [
+        [
+          "admin",
+          "1234"
+        ],
+        [
+          "admin",
+          "admin"
+        ]
+      ],
+      "pixie_dust": true,
+      "pixie_dust_rating": "MEDIUM",
+      "weak_wps": true,
+      "known_vulns": [
+        "Zyxel WPS weakness"
+      ],
+      "brute_force": true,
+      "vuln_versions": []
+    }
+  },
+  "vuln_confirmed_count": 174,
+  "vuln_confirmed": [
+    "ADSL RT2860",
+    "AIR3G WSC Wireless Access Point AIR3G WSC Device",
+    "AirLive Wireless Gigabit AP AirLive Wireless Gigabit AP",
+    "Archer A2",
+    "Archer A2 5.0",
+    "Archer A5",
+    "Archer A5 4.0",
+    "Archer C2",
+    "Archer C2 1.0",
+    "Archer C2 3.0",
+    "Archer C20",
+    "Archer C20 1.0",
+    "Archer C20 4.0",
+    "Archer C20 5.0",
+    "Archer C5",
+    "Archer C5 4.0",
+    "Archer C50",
+    "Archer C50 1.0",
+    "Archer C50 3.0",
+    "Archer C50 4.0",
+    "Archer C50 5.0",
+    "Archer C50 6.0",
+    "Archer C6U",
+    "Archer C6U 1.0.0",
+    "Archer MR200",
+    "Archer MR200 1.0",
+    "Archer MR200 4.0",
+    "Archer MR200 5.0",
+    "Archer VR300",
+    "Archer VR300 1.20",
+    "Archer VR400",
+    "Archer VR400 3.0",
+    "Archer_A9",
+    "Archer_A9 1.0",
+    "B-LINK",
+    "B-LINK 123456",
+    "Belkin AP EV-2012-09-01",
+    "D-Link N Router GO-RT-N150",
+    "D-Link Router DIR-605L",
+    "D-Link Router DIR-615H1",
+    "D-Link Router DIR-655",
+    "D-Link Router DIR-809",
+    "DAP-1360 DAP-1360",
+    "DIR-819",
+    "DIR-819 v1.0.1",
+    "DIR-842 DIR-842",
+    "DWR-921C3 WBR-0001",
+    "EC120-F5",
+    "EC120-F5 1.0",
+    "Enhanced Wireless Router F6D4230-4",
+    "Enhanced Wireless Router F6D4230-4 v1",
+    "EV-2009-02-06",
+    "Home Internet Center Keenetic series",
+    "Home Internet Center KEENETIC series",
+    "Huawei Wireless Access Point RT2860",
+    "JWNR2000v2(Wireless AP) JWNR2000v2",
+    "Keenetic Keenetic series",
+    "Linksys Wireless Access Point EA7500",
+    "Linksys Wireless Router WRT110",
+    "N/A EV-2010-09-20",
+    "NBG-419N NBG-419N",
+    "Netgear AP EV-2012-08-04",
+    "NETGEAR Wireless Access Point R6220",
+    "NETGEAR Wireless Access Point R6260",
+    "Ralink Wireless Access Point RT2860",
+    "Ralink Wireless Access Point WR-AC1210",
+    "RT-G32",
+    "RT-G32 1234",
+    "RTL8196E",
+    "RTL8xxx EV-2009-02-06",
+    "RTL8xxx EV-2010-09-20",
+    "RTL8xxx RTK_ECOS",
+    "Sitecom Wireless Router 300N X2",
+    "Sitecom Wireless Router 300N X2 300N",
+    "Smart Router R3 RT2860",
+    "TD-W8151N RT2860",
+    "TD-W8901N RT2860",
+    "TD-W8951ND RT2860",
+    "TD-W8968",
+    "TD-W8968 2.0",
+    "TD-W9960",
+    "TD-W9960 1.0",
+    "TD-W9960 1.20",
+    "TD-W9960v",
+    "TD-W9960v 1.0",
+    "Tenda",
+    "Tenda 123456",
+    "Timo RA300R4 Timo RA300R4",
+    "TL-MR3020",
+    "TL-MR3020 3.0",
+    "TL-MR3420",
+    "TL-MR3420 5.0",
+    "TL-MR6400",
+    "TL-MR6400 3.0",
+    "TL-MR6400 4.0",
+    "TL-WA855RE",
+    "TL-WA855RE 4.0",
+    "TL-WR1042N EV-2010-09-20",
+    "TL-WR840N",
+    "TL-WR840N 4.0",
+    "TL-WR840N 5.0",
+    "TL-WR840N 6.0",
+    "TL-WR841HP",
+    "TL-WR841HP 5.0",
+    "TL-WR841N",
+    "TL-WR841N 13.0",
+    "TL-WR841N 14.0",
+    "TL-WR842N",
+    "TL-WR842N 5.0",
+    "TL-WR845N",
+    "TL-WR845N 3.0",
+    "TL-WR845N 4.0",
+    "TL-WR850N",
+    "TL-WR850N 1.0",
+    "TL-WR850N 2.0",
+    "TL-WR850N 3.0",
+    "Trendnet router TEW-625br",
+    "Trendnet router TEW-651br",
+    "VMG3312-T20A RT2860",
+    "VMG8623-T50A RT2860",
+    "WAP300N WAP300N",
+    "WAP3205 WAP3205",
+    "Wi-Fi Protected Setup Router RT-AC1200G+",
+    "Wi-Fi Protected Setup Router RT-N10U",
+    "Wi-Fi Protected Setup Router RT-N12",
+    "Wi-Fi Protected Setup Router RT-N12D1",
+    "Wi-Fi Protected Setup Router RT-N12VP",
+    "Wireless Access Point .",
+    "Wireless Router",
+    "Wireless Router 123456",
+    "Wireless Router RTL8xxx EV-2009-02-06",
+    "Wireless WPS Router <#ZVMODELVZ#>",
+    "Wireless WPS Router RT-N10E",
+    "Wireless WPS Router RT-N10LX",
+    "Wireless WPS Router RT-N12E",
+    "Wireless WPS Router RT-N12LX",
+    "WN-200R WN-200R",
+    "WN3000RP",
+    "WN3000RP V3",
+    "WPS Router (5G) RT-N65U",
+    "WPS Router DSL-AC51",
+    "WPS Router DSL-AC52U",
+    "WPS Router DSL-AC55U",
+    "WPS Router DSL-N14U-B1",
+    "WPS Router DSL-N16",
+    "WPS Router DSL-N17U",
+    "WPS Router RT-AC1200",
+    "WPS Router RT-AC1200_V2",
+    "WPS Router RT-AC1750",
+    "WPS Router RT-AC1750U",
+    "WPS Router RT-AC51",
+    "WPS Router RT-AC51U",
+    "WPS Router RT-AC52U",
+    "WPS Router RT-AC52U_B1",
+    "WPS Router RT-AC53",
+    "WPS Router RT-AC57U",
+    "WPS Router RT-AC65P",
+    "WPS Router RT-AC750",
+    "WPS Router RT-AC750L",
+    "WPS Router RT-AC85P",
+    "WPS Router RT-N11P",
+    "WPS Router RT-N12 VP",
+    "WPS Router RT-N12+",
+    "WPS Router RT-N12E",
+    "WPS Router RT-N12E_B1",
+    "WPS Router RT-N14U",
+    "WPS Router RT-N300",
+    "WPS Router RT-N56U",
+    "WPS Router RT-N56UB1",
+    "WPS Router RT-N65U",
+    "ZyXEL NBG-416N AP Router",
+    "ZyXEL NBG-418N AP Router",
+    "ZyXEL NBG-418N AP Router NBG-418N",
+    "ZyXEL Wireless AP Router NBG-417N"
+  ]
+}
