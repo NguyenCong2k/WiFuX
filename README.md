@@ -28,6 +28,49 @@ WiFuX v2.0 is a complete rewrite of the original v1 engine, introducing a global
 > This tool is intended for authorized security testing only. Only use it on networks you own or have explicit permission to test.
 
 ---
+
+## Clean rebuild — `wifux/` package
+
+This branch adds an **un-obfuscated, source-level rebuild** of the engine as a
+plain Python package (`wifux/`), replacing the packed `main.py` blob. It is pure
+standard library (runs on any CPython 3.6+ — no bytecode/version lock):
+
+| Module | Purpose |
+|---|---|
+| `wifux/database.py` | WPS vuln & PIN database (`router_models.json`, `pins.csv`, `vulnwsc.txt`) |
+| `wifux/wps.py` | WPS PIN generation — 24/28/32-bit, D-Link, ASUS, Airocon, TrendNet, EasyBox/Arcadyan, Arris, static |
+| `wifux/companion.py` | WPS attack engine (wpa_supplicant + pixiewps) |
+| `wifux/scanner.py` | Wi-Fi / WPS scanner |
+| `wifux/__main__.py` | command-line entrypoint |
+
+### Run
+
+```bash
+# offline — list candidate PINs for a BSSID (no root / no hardware)
+python -m wifux --pins -b AA:BB:CC:DD:EE:FF
+
+# live (needs root + wpa_supplicant + pixiewps + iw)
+sudo python -m wifux -i wlan0 -K                       # scan, pick a target, Pixie Dust
+sudo python -m wifux -i wlan0 -b AA:BB:CC:DD:EE:FF -K   # Pixie Dust on one AP
+sudo python -m wifux -i wlan0 -b AA:BB:CC:DD:EE:FF -B   # online bruteforce
+```
+
+Scanning uses `iw` in **managed mode**, so no monitor mode is required (works on
+internal Wi-Fi).
+
+### Tests
+
+```bash
+python -m tests.test_wps && python -m tests.test_database && python -m tests.test_companion
+```
+
+> **Status:** database + PIN generation are complete and tested. The attack
+> engine and scanner are ported and compile/import cleanly but have **not been
+> live-tested** — verify on your own hardware before relying on them.
+
+This rebuild is **GPLv3**, derived from OneShot — see [ATTRIBUTION.md](ATTRIBUTION.md).
+
+---
 <div align="center">
 
 [![Support this project](https://img.shields.io/badge/Support%20this%20project-FFD700?style=for-the-badge&logo=ko-fi&logoColor=black)](https://www.supportkori.com/msrsakibur)
